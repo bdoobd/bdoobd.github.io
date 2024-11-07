@@ -24,20 +24,29 @@ body {
 }
 
 .heading-3 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 
 .heading-4 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .heading-5 {
-  font-size: 1.7rem;
+  font-size: 2rem;
+}
+
+.heading-6 {
+  font-size: 1.8rem;
+  font-weight: bolder;
 }
 
 p,
 li {
   font-size: 1.4rem;
+}
+
+em {
+  font-size: 1.2rem;
 }
 
 /* UTILS */
@@ -83,7 +92,7 @@ li {
 
 #main-container {
   display: grid;
-  grid-template-rows: 25vh repeat(5, min-content);
+  grid-template-rows: minmax(25vh, min-content) repeat(3, min-content);
   grid-template-columns:
     [full-start] minmax(2rem, 1fr) [sidebar-start] minmax(25rem, min-content)
     [sidebar-end content-start] repeat(6, minmax(min-content, 12rem))
@@ -92,44 +101,47 @@ li {
 
   margin-block-start: 2rem;
 
-  .sidebar {
-    grid-row: 1 / -1;
-    grid-column: sidebar-start / sidebar-end;
-    background-color: var(--dark-gray);
-    color: var(--light-gray);
+  .header {
+    grid-column: content-start / content-end;
+    grid-row: 1 / span 1;
+    align-content: center;
+  }
 
+  .logo {
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / span 1;
+  }
+
+  .sidebar {
+    grid-row: 2 / -1;
+    grid-column: sidebar-start / sidebar-end;
     padding-inline: 2rem;
   }
 
-  .header {
-    grid-column: content-start / content-end;
-    align-content: center;
-    /* margin-left: 2rem; */
+  .logo,
+  .sidebar {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
   }
 
   .profile {
     grid-column: content-start / content-end;
-    /* margin: 1rem 2rem; */
   }
 
   .education {
     grid-column: content-start / content-end;
-    /* margin: 1rem 2rem; */
   }
 
   .work {
     grid-column: content-start / content-end;
-    /* margin: 1rem 2rem; */
   }
 
   .references {
     grid-column: content-start / content-end;
-    /* margin: 1rem 2rem; */
   }
 
   .footer {
     grid-column: content-start / content-end;
-    /* text-align: right; */
   }
 }
 
@@ -154,17 +166,31 @@ ul {
   color: var(--dark-gray);
 }
 
-.contact {
-  margin-block-start: 2rem;
-}
-
 .education_item,
 .skills_item,
 .languages_item {
   border-left: thin solid var(--light-gray);
-  padding-left: 1rem;
+  padding-inline-start: 1rem;
 }
 
 .education_item:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+/* WORK CARD */
+.work-card {
+  padding-inline-start: 1rem;
+  border-left: thin solid var(--dark-gray);
+  margin-block-end: 1rem;
+}
+
+.work-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+.footer {
+  text-align: right;
 }
