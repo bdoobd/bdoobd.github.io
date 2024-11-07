@@ -4,47 +4,167 @@
   --navy-blue: rgba(20, 20, 155, 1);
 }
 
-body {
+html {
   font-size: 62.5%;
+}
+
+body {
   line-height: 1.6;
-  font-family: sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+/* TYPO */
+.heading-1 {
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.heading-2 {
+  font-size: 3rem;
+}
+
+.heading-3 {
+  font-size: 2.5rem;
+}
+
+.heading-4 {
+  font-size: 2rem;
+}
+
+.heading-5 {
+  font-size: 1.7rem;
+}
+
+p,
+li {
+  font-size: 1.4rem;
+}
+
+/* UTILS */
+.py-1 {
+  padding-block: 1rem;
+}
+.py-2 {
+  padding-block: 2rem;
+}
+.py-3 {
+  padding-block: 3rem;
+}
+
+.pb-1 {
+  padding-block-end: 1rem;
+}
+.pb-2 {
+  padding-block-end: 2rem;
+}
+.pb-3 {
+  padding-block-end: 3rem;
+}
+
+.px-1 {
+  padding-inline: 1rem;
+}
+.px-2 {
+  padding-inline: 2rem;
+}
+.px-3 {
+  padding-inline: 3rem;
+}
+
+.ps-1 {
+  padding-inline-start: 1rem;
+}
+.ps-2 {
+  padding-inline-start: 2rem;
+}
+.ps-3 {
+  padding-inline-start: 3rem;
 }
 
 #main-container {
   display: grid;
-  grid-template-rows: 40vh repeat(4, min-content);
+  grid-template-rows: 25vh repeat(5, min-content);
   grid-template-columns:
-    1fr [page-start]repeat(8, [col-start]minmax(min-content, 10rem) [col-end])
-    [page-end] 1fr;
+    [full-start] minmax(2rem, 1fr) [sidebar-start] minmax(25rem, min-content)
+    [sidebar-end content-start] repeat(6, minmax(min-content, 12rem))
+    [content-end]
+    minmax(2rem, 1fr) [full-end];
+
+  margin-block-start: 2rem;
+
+  .sidebar {
+    grid-row: 1 / -1;
+    grid-column: sidebar-start / sidebar-end;
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+
+    padding-inline: 2rem;
+  }
+
+  .header {
+    grid-column: content-start / content-end;
+    align-content: center;
+    /* margin-left: 2rem; */
+  }
+
+  .profile {
+    grid-column: content-start / content-end;
+    /* margin: 1rem 2rem; */
+  }
+
+  .education {
+    grid-column: content-start / content-end;
+    /* margin: 1rem 2rem; */
+  }
+
+  .work {
+    grid-column: content-start / content-end;
+    /* margin: 1rem 2rem; */
+  }
+
+  .references {
+    grid-column: content-start / content-end;
+    /* margin: 1rem 2rem; */
+  }
+
+  .footer {
+    grid-column: content-start / content-end;
+    /* text-align: right; */
+  }
 }
 
-.sidebar {
-  background-color: blueviolet;
-  grid-row: 1 / -1;
-  grid-column: page-start / col-end 1;
+ul {
+  list-style-type: none;
 }
 
-.header {
-  background-color: aquamarine;
-  grid-column: col-start 2 / page-end;
+/* SIDEBAR */
+.circle {
+  width: 15rem;
+  margin: 3rem auto 0;
+  height: 15rem;
+  line-height: 15rem;
+  border-radius: 50%;
+  background-color: var(--light-gray);
+  text-align: center;
 }
 
-.profile {
-  background-color: brown;
-  grid-column: col-start 2 / page-end;
+.circle p {
+  font-size: 10rem;
+  font-weight: 400;
+  color: var(--dark-gray);
 }
 
-.study {
-  background-color: cadetblue;
-  grid-column: col-start 2 / page-end;
+.contact {
+  margin-block-start: 2rem;
 }
 
-.work {
-  background-color: crimson;
-  grid-column: col-start 2 / page-end;
+.education_item,
+.skills_item,
+.languages_item {
+  border-left: thin solid var(--light-gray);
+  padding-left: 1rem;
 }
 
-.references {
-  background-color: darkkhaki;
-  grid-column: col-start 2 / page-end;
+.education_item:not(:last-child) {
+  margin-bottom: 1rem;
 }
