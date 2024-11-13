@@ -2,6 +2,11 @@
   --light-gray: rgba(200, 200, 200, 1);
   --dark-gray: rgba(90, 90, 90, 1);
   --navy-blue: rgba(20, 20, 155, 1);
+  /* --primary-color: rgba(245, 237, 200, 1); */
+  --primary-color: rgba(123, 154, 204, 1);
+  /* --secondary-color: rgba(238, 246, 255, 1); */
+  --secondary-color: rgba(252, 246, 245, 1);
+  --line-color: rgba(108, 108, 108, 1);
 }
 
 html {
@@ -95,9 +100,19 @@ em {
   grid-template-rows: minmax(25vh, min-content) repeat(3, min-content);
   grid-template-columns:
     [full-start] minmax(2rem, 1fr) [sidebar-start] minmax(25rem, min-content)
-    [sidebar-end content-start] repeat(6, minmax(min-content, 12rem))
+    [sidebar-end content-start] repeat(6, minmax(8rem, 12rem))
     [content-end]
     minmax(2rem, 1fr) [full-end];
+
+  @media only screen and (max-width: 40em) {
+    grid-template-rows: min-content;
+    grid-template-columns:
+      [full-start] minmax(0.25rem, 1fr) [content-start] repeat(
+        6,
+        minmax(min-content, max-content)
+      )
+      [content-end] minmax(0.25rem, 1fr) [full-end];
+  }
 
   margin-block-start: 2rem;
 
@@ -110,18 +125,37 @@ em {
   .logo {
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / span 1;
+
+    @media only screen and (max-width: 40em) {
+      grid-column: content-start / content-end;
+      grid-row: 2 / span 1;
+    }
   }
 
   .sidebar {
     grid-row: 2 / -1;
     grid-column: sidebar-start / sidebar-end;
     padding-inline: 2rem;
+
+    @media only screen and (max-width: 40em) {
+      grid-column: content-start / content-end;
+      grid-row: 3 / span 1;
+    }
   }
 
   .logo,
   .sidebar {
-    background-color: var(--dark-gray);
-    color: var(--light-gray);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  .header,
+  .profile,
+  .work,
+  .references,
+  .footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
 
   .profile {
@@ -156,7 +190,7 @@ ul {
   height: 15rem;
   line-height: 15rem;
   border-radius: 50%;
-  background-color: var(--light-gray);
+  background-color: var(--secondary-color);
   text-align: center;
 }
 
@@ -169,7 +203,7 @@ ul {
 .education_item,
 .skills_item,
 .languages_item {
-  border-left: thin solid var(--light-gray);
+  border-left: thin solid var(--secondary-color);
   padding-inline-start: 1rem;
 }
 
@@ -177,10 +211,26 @@ ul {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 40em) {
+  .education_item {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      flex-basis: 30%;
+    }
+
+    h5 {
+      flex-basis: 70%;
+      text-align: right;
+    }
+  }
+}
+
 /* WORK CARD */
 .work-card {
   padding-inline-start: 1rem;
-  border-left: thin solid var(--dark-gray);
+  border-left: thin solid var(--primary-color);
   margin-block-end: 1rem;
 }
 
