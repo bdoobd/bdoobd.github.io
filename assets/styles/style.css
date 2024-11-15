@@ -188,16 +188,11 @@ ul {
   width: 15rem;
   margin: 3rem auto 0;
   height: 15rem;
-  line-height: 15rem;
-  border-radius: 50%;
-  background-color: var(--secondary-color);
-  text-align: center;
-}
 
-.circle p {
-  font-size: 10rem;
-  font-weight: 400;
-  color: var(--dark-gray);
+  img {
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+  }
 }
 
 .education_item,
@@ -209,6 +204,13 @@ ul {
 
 .education_item:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.contact img {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-inline-end: 1rem;
 }
 
 @media only screen and (max-width: 40em) {
