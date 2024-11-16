@@ -1,0 +1,51 @@
+@page {
+  size: A4 portrait;
+  margin: 1pt;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16pt;
+}
+/* HIDE ELEMENTS */
+.logo,
+.footer {
+  display: none;
+}
+
+#main-container {
+  display: grid;
+
+  grid-template-columns: 30% 70%;
+  grid-template-rows: max-content;
+
+  .logo,
+  .sidebar,
+  .header,
+  .profile,
+  .work,
+  .references,
+  .footer {
+    background-color: white;
+    color: black;
+  }
+
+  .header {
+    grid-column: 1 / -1;
+  }
+
+  .sidebar {
+    grid-column: 1 / span 1;
+    grid-row: 2 / -1;
+  }
+
+  .profile {
+    grid-column: 2 / -1;
+    grid-row: 2 / span 1;
+  }
+
+  .work {
+    grid-column: 2 / -1;
+    grid-row: 3 / span 1;
+  }
+}
