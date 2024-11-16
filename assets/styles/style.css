@@ -3,7 +3,7 @@
   --dark-gray: rgba(90, 90, 90, 1);
   --navy-blue: rgba(20, 20, 155, 1);
   /* --primary-color: rgba(245, 237, 200, 1); */
-  --primary-color: rgba(123, 154, 204, 1);
+  --primary-color: rgba(91, 114, 150, 1);
   /* --secondary-color: rgba(238, 246, 255, 1); */
   --secondary-color: rgba(252, 246, 245, 1);
   --line-color: rgba(108, 108, 108, 1);
@@ -97,7 +97,10 @@ em {
 
 #main-container {
   display: grid;
-  grid-template-rows: minmax(25vh, min-content) repeat(3, min-content);
+  grid-template-rows: minmax(25vh, min-content) repeat(
+      3,
+      minmax(min-content, max-content)
+    );
   grid-template-columns:
     [full-start] minmax(2rem, 1fr) [sidebar-start] minmax(25rem, min-content)
     [sidebar-end content-start] repeat(6, minmax(8rem, 12rem))
@@ -176,6 +179,10 @@ em {
 
   .footer {
     grid-column: content-start / content-end;
+    grid-row: 4 / span 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
   }
 }
 
