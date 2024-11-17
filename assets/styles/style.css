@@ -37,11 +37,11 @@ body {
 }
 
 .heading-5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .heading-6 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bolder;
 }
 
@@ -108,7 +108,6 @@ em {
     minmax(2rem, 1fr) [full-end];
 
   @media only screen and (max-width: 40em) {
-    grid-template-rows: min-content;
     grid-template-columns:
       [full-start] minmax(0.25rem, 1fr) [content-start] repeat(
         6,
@@ -163,6 +162,11 @@ em {
 
   .profile {
     grid-column: content-start / content-end;
+
+    @media only screen and (max-width: 40em) {
+      grid-column: content-start / content-end;
+      grid-row: 4 / span 1;
+    }
   }
 
   .education {
@@ -183,6 +187,11 @@ em {
     display: flex;
     align-items: flex-end;
     justify-content: end;
+
+    @media only screen and (max-width: 40em) {
+      grid-column: content-start / content-end;
+      grid-row: 6 / span 1;
+    }
   }
 }
 
