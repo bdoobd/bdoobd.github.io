@@ -1,11 +1,17 @@
 @page {
   size: A4 portrait;
-  margin: 1pt;
+  margin: 10mm;
+}
+
+@page {
+  @top-left {
+    content: "";
+  }
 }
 
 body {
   font-family: "Times New Roman", Times, serif;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 /* HIDE ELEMENTS */
 .logo,
@@ -13,11 +19,45 @@ body {
   display: none;
 }
 
+.heading-1 {
+  font-size: 35pt;
+}
+.heading-2 {
+  font-size: 35pt;
+}
+.heading-3 {
+  font-size: 26pt;
+}
+.heading-4 {
+  font-size: 20pt;
+}
+.heading-5 {
+  font-size: 18pt;
+}
+
+.py-1 {
+  padding-block: 2mm;
+}
+
+.py-2 {
+  padding-block: 4mm;
+}
+
+.py-3 {
+  padding-block: 6mm;
+}
+
+.print-bold {
+  font-weight: bolder;
+}
+
 #main-container {
   display: grid;
 
-  grid-template-columns: 30% 70%;
-  grid-template-rows: max-content;
+  grid-template-columns: [sidebar-start] 35% [sidebar-end content-start] 1fr [content-end];
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+
+  /* gap: 5mm; */
 
   .logo,
   .sidebar,
@@ -31,21 +71,71 @@ body {
   }
 
   .header {
-    grid-column: 1 / -1;
+    grid-column: sidebar-start / content-end;
+    padding: 5mm;
+    text-align: right;
   }
 
   .sidebar {
-    grid-column: 1 / span 1;
-    grid-row: 2 / -1;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 2 / span 2;
+
+    img {
+      width: 7mm;
+      height: 7mm;
+      background: black;
+      margin-inline-end: 4mm;
+    }
+
+    .contact p {
+      font-size: 14pt;
+      margin-block-end: 1mm;
+    }
+  }
+
+  .education-item {
+    margin-block-end: 5mm;
+
+    p:last-child {
+      margin-inline-start: 4mm;
+    }
+  }
+
+  .skills-item,
+  .languages-item {
+    margin-inline-start: 8mm;
   }
 
   .profile {
-    grid-column: 2 / -1;
+    grid-column: content-start / content-end;
     grid-row: 2 / span 1;
+    padding-inline-start: 5mm;
   }
 
   .work {
-    grid-column: 2 / -1;
+    grid-column: content-start / content-end;
     grid-row: 3 / span 1;
+    padding-inline-start: 5mm;
+  }
+
+  .work-card {
+    margin-block-end: 4mm;
+  }
+
+  .work-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-inline-end: 10mm; */
+  }
+
+  .work-card ul {
+    padding-inline-start: 8mm;
+  }
+
+  .work-card,
+  .languages,
+  .skills {
+    page-break-inside: avoid;
   }
 }

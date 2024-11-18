@@ -211,14 +211,14 @@ ul {
   }
 }
 
-.education_item,
-.skills_item,
-.languages_item {
+.education-item,
+.skills-item,
+.languages-item {
   border-left: thin solid var(--secondary-color);
   padding-inline-start: 1rem;
 }
 
-.education_item:not(:last-child) {
+.education-item:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -230,7 +230,7 @@ ul {
 }
 
 @media only screen and (max-width: 40em) {
-  .education_item {
+  .education-item {
     display: flex;
     flex-wrap: wrap;
 
