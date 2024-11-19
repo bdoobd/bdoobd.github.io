@@ -11,7 +11,7 @@
 
 body {
   font-family: "Times New Roman", Times, serif;
-  font-size: 14pt;
+  font-size: 10pt;
 }
 /* HIDE ELEMENTS */
 .logo,
@@ -20,19 +20,19 @@ body {
 }
 
 .heading-1 {
-  font-size: 35pt;
+  font-size: 28pt;
 }
 .heading-2 {
-  font-size: 35pt;
+  font-size: 24pt;
 }
 .heading-3 {
-  font-size: 26pt;
+  font-size: 22pt;
 }
 .heading-4 {
-  font-size: 20pt;
+  font-size: 18pt;
 }
 .heading-5 {
-  font-size: 18pt;
+  font-size: 14pt;
 }
 
 .py-1 {
@@ -47,6 +47,14 @@ body {
   padding-block: 6mm;
 }
 
+.pe-1 {
+  padding-block-end: 2mm;
+}
+
+.pe-2 {
+  padding-block-end: 4mm;
+}
+
 .print-bold {
   font-weight: bolder;
 }
@@ -55,7 +63,8 @@ body {
   display: grid;
 
   grid-template-columns: [sidebar-start] 35% [sidebar-end content-start] 1fr [content-end];
-  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  /* grid-template-rows: repeat(3, minmax(min-content, max-content)); */
+  grid-template-rows: max-content min-content minmax(min-content, max-content);
 
   /* gap: 5mm; */
 
@@ -81,14 +90,14 @@ body {
     grid-row: 2 / span 2;
 
     img {
-      width: 7mm;
-      height: 7mm;
+      width: 5mm;
+      height: 5mm;
       background: black;
       margin-inline-end: 4mm;
     }
 
     .contact p {
-      font-size: 14pt;
+      font-size: 10pt;
       margin-block-end: 1mm;
     }
   }
