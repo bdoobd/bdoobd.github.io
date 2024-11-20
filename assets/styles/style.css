@@ -199,6 +199,16 @@ ul {
   list-style-type: none;
 }
 
+.lang-preference {
+  text-align: right;
+  padding-inline-end: 2rem;
+
+  .fi,
+  .en {
+    cursor: pointer;
+  }
+}
+
 /* SIDEBAR */
 .circle {
   width: 15rem;

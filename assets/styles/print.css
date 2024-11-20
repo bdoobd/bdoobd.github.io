@@ -15,7 +15,8 @@ body {
 }
 /* HIDE ELEMENTS */
 .logo,
-.footer {
+.footer,
+.languages {
   display: none;
 }
 

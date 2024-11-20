@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="./assets/styles/css_reset.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" media="screen" />
     <link rel="stylesheet" href="./assets/styles/print.css" media="print" />
+    <script defer src="./assets/js/language.js"></script>
     <title>Resume page</title>
   </head>
   <body>
@@ -40,14 +41,19 @@
         </div>
       </div>
       <header class="header ps-3">
+        <div class="lang-preference">
+          <p><span class="fi">[fi]</span> / <span class="en">[en]</span></p>
+        </div>
         <div class="user-name">
           <h1 class="heading-1">Igor Vassiliev</h1>
-          <h4 class="heading-4">Huolitsija / varastomies</h4>
+          <h4 class="heading-4" data-1ng="objective">
+            Huolitsija / varastomies
+          </h4>
         </div>
       </header>
       <div class="sidebar">
         <section class="contact">
-          <h3 class="heading-3 py-2">Yhteystiedot</h3>
+          <h3 class="heading-3 py-2" data-1ng="contact">Yhteystiedot</h3>
           <p class="phone">
             <img src="./assets/images/phone-light.png" alt="Phone number" />+358
             40 776 2198
@@ -66,7 +72,7 @@
           </p>
         </section>
         <section class="education">
-          <h3 class="heading-3 py-2">Koulutus</h3>
+          <h3 class="heading-3 py-2" data-1ng="education">Koulutus</h3>
           <div class="education-item">
             <p class="print-bold">2004 - 2008</p>
             <h5 class="heading-5">Tietokäsittelyn perustutkinto, datanomi</h5>
@@ -85,7 +91,7 @@
           </div>
         </section>
         <section class="skills">
-          <h3 class="heading-3 py-2">Osaamisalueet</h3>
+          <h3 class="heading-3 py-2" data-1ng="skills">Osaamisalueet</h3>
           <ul class="skills-item">
             <li>vienti</li>
             <li>tuonti</li>
@@ -99,7 +105,7 @@
           </ul>
         </section>
         <section class="languages pb-1">
-          <h3 class="heading-3 py-2">Kielet</h3>
+          <h3 class="heading-3 py-2" data-1ng="languages">Kielet</h3>
           <ul class="languages-item">
             <li>Venäjä (äidinkieli)</li>
             <li>Suomi (taso 4)</li>
