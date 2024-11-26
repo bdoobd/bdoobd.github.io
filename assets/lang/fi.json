@@ -1,7 +1,97 @@
 {
-  "objective": "Huolitsija / varastomies / tukihenkilö",
-  "contact": "Yhteystiedot",
-  "education": "Koulutus",
-  "skills": "Osaaminsalueet",
-  "languages": "Kielet"
+  "header": {
+    "objective": "Huolitsija / varastomies / tukihenkilö"
+  },
+  "contact": {
+    "name": "Yhteystiedot",
+    "phone": "+358 40 776 2197",
+    "email": "igor.vassiliev@gmail.com",
+    "address": "00970, Helsinki",
+    "web": "https://bdoobd.github.io"
+  },
+  "education": {
+    "name": "Koulutus",
+    "items": [
+      {
+        "nameOfCourse": "Tietokäsittelyn perustutkinto, datanomi",
+        "years": "2004 - 2008",
+        "specs": "käyttötuen linja",
+        "nameOfSchool": "Suomen Liikemiesten Kauppaopisto - ATK-Instituutti"
+      },
+      {
+        "nameOfCourse": "Tietokoneasentajan ammattitutkinto",
+        "years": "2002 - 2003",
+        "specs": "",
+        "nameOfSchool": "Amiedu"
+      },
+      {
+        "nameOfCourse": "Myyjän koulutus",
+        "years": "1998 - 1998",
+        "specs": "",
+        "nameOfSchool": "Uudenmaan opintovirasto"
+      }
+    ]
+  },
+  "skills": {
+    "name": "Osaamislueet",
+    "items": [
+      "vienti",
+      "tuonti",
+      "passitus",
+      "varastotoimeet",
+      "toimistoojelmistojen käyttö",
+      "käyttöjärjestelmien ylläpito",
+      "käyttöjärjestelmien käyttö",
+      "tietoliikenneverkko",
+      "BC ajokortti"
+    ]
+  },
+  "languages": {
+    "name": "Kielet",
+    "items": ["Venäjä (äidinkieli)", "Suomi (taso 4)", "English (unclassified)"]
+  },
+  "profile": {
+    "name": "Profiili",
+    "text": "Olen monipuolinen ja ahkera työntekijä, jolla on kokemusta toimistotyöstä, huolinnasta sekä varastotyöskentelystä. Hallitsen hyvin tietokoneohjelmistojen käytön ja tunnen tullausprosessien periaatteet. Olen nopea oppimaan uutta ja sopeudun helposti muuttuviin työtilanteisiin. Voin työskennellä tehokkaasti sekä osana tiimiä että itsenäisesti. Etsin mahdollisuutta hyödyntää taitojani tehokkaassa ja asiakaslähtöisessä ympäristössä."
+  },
+  "work": {
+    "name": "Työkokemus",
+    "items": [
+      {
+        "companyName": "Finnelit Oy",
+        "workingYears": "2005 - present",
+        "position": "huolitsija, varastomies, tukihenkilö",
+        "specs": [
+          "vienti UTU",
+          "tuonti UTU",
+          "passitus UTU / sanomailmoittaminen",
+          "rahtiliikeenteen saateasiakirjat",
+          "varaston hoito, noudot, lähetykset ja käsittely",
+          "laiteiston ja ohjelmiston tukitehtävät"
+        ]
+      },
+      {
+        "companyName": "Vuosaaren Autokorjaamo",
+        "workingYears": "2004 - 2005",
+        "position": "eri tehtävät korjaamolla ja toimistolla",
+        "specs": ["laskutus", "varaosien tilaus", "asennukset"]
+      },
+      {
+        "companyName": "Novo Group Oy",
+        "workingYears": "2002 - 2003",
+        "position": "lähituki / työharjouttelu",
+        "specs": ["OS asennukset", "vakiointi", "ongelmaselvitykset"]
+      },
+      {
+        "companyName": "Kesoil / Neste",
+        "workingYears": "1998 - 2000",
+        "position": "huoltamon myyjä",
+        "specs": [
+          "huoltamon kassa",
+          "kauppan tilaukset",
+          "poltoaineen tilaukset"
+        ]
+      }
+    ]
+  }
 }

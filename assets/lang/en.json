@@ -3,5 +3,10 @@
   "contact": "Contact",
   "education": "Education",
   "skills": "Skills",
-  "languages": "Languages"
+  "languages": "Languages",
+  "first_lang": "Russia (mother tongue)",
+  "second_lang": "Finnish (level 4)",
+  "third_lang": "English (unclassified)",
+  "profile": "Profile",
+  "work": "Work Experience"
 }

@@ -30,7 +30,8 @@
     <link rel="stylesheet" href="./assets/styles/css_reset.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" media="screen" />
     <link rel="stylesheet" href="./assets/styles/print.css" media="print" />
-    <script defer src="./assets/js/language.js"></script>
+    <!-- <script defer src="./assets/js/language.js"></script> -->
+    <script type="module" src="./assets/js/controller.js"></script>
     <title>Resume page</title>
   </head>
   <body>
@@ -46,139 +47,17 @@
         </div>
         <div class="user-name">
           <h1 class="heading-1">Igor Vassiliev</h1>
-          <h4 class="heading-4" data-1ng="objective">
-            Huolitsija / varastomies
-          </h4>
+          <div class="objective"></div>
         </div>
       </header>
       <div class="sidebar">
-        <section class="contact">
-          <h3 class="heading-3 py-2" data-1ng="contact">Yhteystiedot</h3>
-          <p class="phone">
-            <img src="./assets/images/phone-light.png" alt="Phone number" />+358
-            40 776 2198
-          </p>
-          <p class="email">
-            <img src="./assets/images/email-light.png" alt="E-mail address" />
-            igor.vassiliev@gmail.com
-          </p>
-          <p class="address">
-            <img src="./assets/images/home-light.png" alt="Address" />
-            00970 Helsinki
-          </p>
-          <p class="web">
-            <img src="./assets/images/web-light.png" alt="Web site" />
-            bdoobd.github.io
-          </p>
-        </section>
-        <section class="education">
-          <h3 class="heading-3 py-2" data-1ng="education">Koulutus</h3>
-          <div class="education-item">
-            <p class="print-bold">2004 - 2008</p>
-            <h5 class="heading-5">Tietokäsittelyn perustutkinto, datanomi</h5>
-            <p class="heading-6">käyttötuen linja</p>
-            <p>Suomen Liikemiesten Kauppaopisto - ATK-Instituutti</p>
-          </div>
-          <div class="education-item">
-            <p class="print-bold">2002 - 2003</p>
-            <h5 class="heading-5">Tietokoneasentajan ammattitutkinto</h5>
-            <p>Amiedu</p>
-          </div>
-          <div class="education-item">
-            <p class="print-bold">1998 - 1998</p>
-            <h5 class="heading-5">Myyjän koulutus</h5>
-            <p>Uudenmaan opintovirasto</p>
-          </div>
-        </section>
-        <section class="skills">
-          <h3 class="heading-3 py-2" data-1ng="skills">Osaamisalueet</h3>
-          <ul class="skills-item">
-            <li>vienti</li>
-            <li>tuonti</li>
-            <li>passitus</li>
-            <li>varastotoimeet</li>
-            <li>toimistoojelmistojen käyttö</li>
-            <li>käyttöjärjestelmien ylläpito</li>
-            <li>käyttöjärjestelmien käyttö</li>
-            <li>tietoliikenneverkko</li>
-            <li>BC ajokortti</li>
-          </ul>
-        </section>
-        <section class="languages pb-1">
-          <h3 class="heading-3 py-2" data-1ng="languages">Kielet</h3>
-          <ul class="languages-item">
-            <li>Venäjä (äidinkieli)</li>
-            <li>Suomi (taso 4)</li>
-            <li>English (unclassified)</li>
-          </ul>
-        </section>
+        <section class="contact"></section>
+        <section class="education"></section>
+        <section class="skills"></section>
+        <section class="languages pb-1"></section>
       </div>
-      <section class="profile px-3">
-        <h3 class="heading-3 py-2">Profiili</h3>
-        <p>
-          Olen monipuolinen ja ahkera työntekijä, jolla on kokemusta
-          toimistotyöstä, huolinnasta sekä varastotyöskentelystä. Hallitsen
-          hyvin tietokoneohjelmistojen käytön ja tunnen tullausprosessien
-          periaatteet. Olen nopea oppimaan uutta ja sopeudun helposti muuttuviin
-          työtilanteisiin. Voin työskennellä tehokkaasti sekä osana tiimiä että
-          itsenäisesti. Etsin mahdollisuutta hyödyntää taitojani tehokkaassa ja
-          asiakaslähtöisessä ympäristössä.
-        </p>
-      </section>
-      <section class="work px-3">
-        <h3 class="heading-3 pe-2">Työkokemus</h3>
-        <div class="work-card">
-          <div class="work-card-header">
-            <h4 class="heading-4">Finnelit Oy</h4>
-            <h5 class="heading-5">2005 - present</h5>
-          </div>
-          <h5 class="heading-5">huolitsija, varastomies, tukihenkilö</h5>
-          <ul>
-            <li>vienti UTU</li>
-            <li>tuonti UTU</li>
-            <li>passitus UTU / sanomailmoittaminen</li>
-            <li>rahtiliikeenteen saateasiakirjat</li>
-            <li>varaston hoito, noudot, lähetykset ja käsittely</li>
-            <li>laiteiston ja ohjelmiston tukitehtävät</li>
-          </ul>
-        </div>
-        <div class="work-card">
-          <div class="work-card-header">
-            <h4 class="heading-4">Vuosaaren Autokorjaamo</h4>
-            <h5 class="heading-5">2004 - 2005</h5>
-          </div>
-          <h5 class="heading-5">eri tehtävät korjaamolla ja toimistolla</h5>
-          <ul>
-            <li>laskutus</li>
-            <li>varaosien tilaus</li>
-            <li>asennukset</li>
-          </ul>
-        </div>
-        <div class="work-card">
-          <div class="work-card-header">
-            <h4 class="heading-4">Novo Group Oy</h4>
-            <h5 class="heading-5">2002 - 2003</h5>
-          </div>
-          <h5 class="heading-5">lähituki / työharjouttelu</h5>
-          <ul>
-            <li>OS asennukset</li>
-            <li>vakiointi</li>
-            <li>ongelmaselvitykset</li>
-          </ul>
-        </div>
-        <div class="work-card">
-          <div class="work-card-header">
-            <h4 class="heading-4">Kesoil / Neste</h4>
-            <h5 class="heading-5">1998 - 2000</h5>
-          </div>
-          <h5 class="heading-5">huoltamon myyjä</h5>
-          <ul>
-            <li>huoltamon kassa</li>
-            <li>kauppan tilaukset</li>
-            <li>poltoaineen tilaukset</li>
-          </ul>
-        </div>
-      </section>
+      <section class="profile px-3"></section>
+      <section class="work px-3"></section>
       <footer class="footer px-3 pb-1">
         <em>Created by me at 2024</em>
       </footer>

@@ -16,7 +16,7 @@ body {
 /* HIDE ELEMENTS */
 .logo,
 .footer,
-.languages {
+.lang-preference {
   display: none;
 }
 
