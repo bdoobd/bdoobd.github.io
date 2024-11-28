@@ -64,10 +64,8 @@ body {
   display: grid;
 
   grid-template-columns: [sidebar-start] 35% [sidebar-end content-start] 1fr [content-end];
-  /* grid-template-rows: repeat(3, minmax(min-content, max-content)); */
   grid-template-rows: max-content min-content minmax(min-content, max-content);
 
-  /* gap: 5mm; */
 
   .logo,
   .sidebar,

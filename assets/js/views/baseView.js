@@ -15,24 +15,6 @@ export default class BaseView {
     this._parentElement.insertAdjacentHTML("afterbegin", markup);
   }
 
-  renderBlock(data) {
-    if (!data) {
-      throw new Error("Missing language data");
-    }
-
-    this._data = data;
-
-    const nameMarkup = this._generateName();
-    const itemsMarkup = this._data.items
-      .map((item) => this._generateItems(item))
-      .join("");
-
-    this._parentElement.insertAdjacentHTML(
-      "afterbegin",
-      `${nameMarkup}${itemsMarkup}`
-    );
-  }
-
   _clear() {
     this._parentElement.innerHTML = "";
   }

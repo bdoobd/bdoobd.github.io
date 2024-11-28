@@ -1,12 +1,97 @@
 {
-  "objective": "Forwarder / warehouseman / support person",
-  "contact": "Contact",
-  "education": "Education",
-  "skills": "Skills",
-  "languages": "Languages",
-  "first_lang": "Russia (mother tongue)",
-  "second_lang": "Finnish (level 4)",
-  "third_lang": "English (unclassified)",
-  "profile": "Profile",
-  "work": "Work Experience"
+  "header": {
+    "objective": "Freight Forwarder / Warehouse Worker / Support Specialist"
+  },
+  "contact": {
+    "name": "Contact Information",
+    "phone": "+358 40 776 2197",
+    "email": "igor.vassiliev@gmail.com",
+    "address": "00970, Helsinki",
+    "web": "https://bdoobd.github.io"
+  },
+  "education": {
+    "name": "Education",
+    "items": [
+      {
+        "nameOfCourse": "Basic Degree in Information Processing, Datanomist",
+        "years": "2004 - 2008",
+        "specs": "User Support Line",
+        "nameOfSchool": "Finnish Business School - IT Institute"
+      },
+      {
+        "nameOfCourse": "Professional Qualification in Computer Installation",
+        "years": "2002 - 2003",
+        "specs": "",
+        "nameOfSchool": "Amiedu"
+      },
+      {
+        "nameOfCourse": "Salesperson Training",
+        "years": "1998 - 1998",
+        "specs": "",
+        "nameOfSchool": "Uusimaa Educational Office"
+      }
+    ]
+  },
+  "skills": {
+    "name": "Skills",
+    "items": [
+      "export",
+      "import",
+      "transit",
+      "warehouse operations",
+      "use of office software",
+      "operating system maintenance",
+      "operating system usage",
+      "telecommunication networks",
+      "BC driver's license"
+    ]
+  },
+  "languages": {
+    "name": "Languages",
+    "items": ["Russian (native)", "Finnish (level 4)", "English (unclassified)"]
+  },
+  "profile": {
+    "name": "Profile",
+    "text": "I am a versatile and diligent worker with experience in office work, freight forwarding, and warehouse operations. I am proficient in the use of computer software and familiar with customs clearance processes. I am quick to learn new skills and adapt easily to changing work situations. I can work efficiently as part of a team or independently. I am seeking an opportunity to leverage my skills in an efficient and customer-oriented environment."
+  },
+  "work": {
+    "name": "Work Experience",
+    "items": [
+      {
+        "companyName": "Finnelit Oy",
+        "workingYears": "2005 - present",
+        "position": "Freight Forwarder, Warehouse Worker, Support Specialist",
+        "specs": [
+          "export UTU",
+          "import UTU",
+          "transit UTU / electronic declarations",
+          "freight traffic waybills",
+          "warehouse management, pickups, shipments, and handling",
+          "hardware and software support tasks"
+        ]
+      },
+      {
+        "companyName": "Vuosaaren Autokorjaamo",
+        "workingYears": "2004 - 2005",
+        "position": "Various tasks in workshop and office",
+        "specs": ["invoicing", "ordering spare parts", "installations"]
+      },
+      {
+        "companyName": "Novo Group Oy",
+        "workingYears": "2002 - 2003",
+        "position": "On-Site Support / Internship",
+        "specs": [
+          "OS installations",
+          "standardization",
+          "problem troubleshooting"
+        ]
+      },
+      {
+        "companyName": "Kesoil / Neste",
+        "workingYears": "1998 - 2000",
+        "position": "Gas Station Salesperson",
+        "specs": ["gas station cashier", "store orders", "fuel orders"]
+      }
+    ]
+  }
 }

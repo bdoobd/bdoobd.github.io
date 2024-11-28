@@ -8,6 +8,14 @@ class HeaderView extends BaseView {
             ${this._data.objective}
           </h4>`;
   }
+
+  addLanguageHandler(handler) {
+    const langPreferences = document.querySelector(".lang-preference");
+    langPreferences.addEventListener("click", (e) => {
+      e.preventDefault();
+      handler(e);
+    });
+  }
 }
 
 export default new HeaderView();

@@ -9,20 +9,30 @@ import WorkView from "./views/workView.js";
 
 const getLanguagePreferences = () => localStorage.getItem("language") || "fi";
 
-const showEducationsHandler = function () {
-  const data = "";
+const changeLanguageHandler = async function (event) {
+  if (event.target.nodeName === "SPAN") {
+    const data = await model.getData(event.target.className);
+
+    localStorage.setItem("language", event.target.className);
+
+    run(data);
+  }
+};
+
+const run = function (data) {
+  HeaderView.render(data.header);
+  HeaderView.addLanguageHandler(changeLanguageHandler);
+  ContactView.render(data.contact);
+  ProfileView.render(data.profile);
+  EducationView.render(data.education);
+  SkillsView.render(data.skills);
+  LanguageView.render(data.languages);
+  WorkView.render(data.work);
 };
 
 const init = async function () {
   const data = await model.getData(getLanguagePreferences());
-  console.log(data);
-  HeaderView.render(data.header);
-  ContactView.render(data.contact);
-  ProfileView.render(data.profile);
-  EducationView.renderBlock(data.education);
-  SkillsView.renderBlock(data.skills);
-  LanguageView.renderBlock(data.languages);
-  WorkView.renderBlock(data.work);
+  run(data);
 };
 
 init();

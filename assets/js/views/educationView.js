@@ -3,20 +3,13 @@ import BaseView from "./baseView.js";
 class EducationView extends BaseView {
   _parentElement = document.querySelector(".education");
 
-  // render(data) {
-  //   this._data = data;
+  _generateMarkup() {
+    return this._generateName().concat(this._createBlockMarkup());
+  }
 
-  //   const blockTitle = this._generateName();
-
-  //   const itemMarkup = this._data.schools
-  //     .map((item) => this._generateItems(item))
-  //     .join("");
-
-  //   const educationBlock = `${blockTitle}${itemMarkup}`;
-
-  //   this._clear();
-  //   this._parentElement.insertAdjacentHTML("afterbegin", educationBlock);
-  // }
+  _createBlockMarkup() {
+    return this._data.items.map((item) => this._generateItems(item)).join("");
+  }
 
   _generateItems(itemData) {
     return `
