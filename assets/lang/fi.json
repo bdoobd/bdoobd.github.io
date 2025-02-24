@@ -33,13 +33,13 @@
     ]
   },
   "skills": {
-    "name": "Osaamislueet",
+    "name": "Osaamisalueet",
     "items": [
       "vienti",
       "tuonti",
       "passitus",
-      "varastotoimeet",
-      "toimistoojelmistojen käyttö",
+      "varastotoimet",
+      "toimisto-ojelmistojen käyttö",
       "käyttöjärjestelmien ylläpito",
       "käyttöjärjestelmien käyttö",
       "tietoliikenneverkko",
@@ -65,9 +65,9 @@
           "vienti UTU",
           "tuonti UTU",
           "passitus UTU / sanomailmoittaminen",
-          "rahtiliikeenteen saateasiakirjat",
+          "rahtiliikenteen saateasiakirjat",
           "varaston hoito, noudot, lähetykset ja käsittely",
-          "laiteiston ja ohjelmiston tukitehtävät"
+          "laitteiston ja ohjelmiston tukitehtävät"
         ]
       },
       {
@@ -79,7 +79,7 @@
       {
         "companyName": "Novo Group Oy",
         "workingYears": "2002 - 2003",
-        "position": "lähituki / työharjouttelu",
+        "position": "lähituki / työharjoittelu",
         "specs": ["OS asennukset", "vakiointi", "ongelmaselvitykset"]
       },
       {
@@ -88,8 +88,8 @@
         "position": "huoltamon myyjä",
         "specs": [
           "huoltamon kassa",
-          "kauppan tilaukset",
-          "poltoaineen tilaukset"
+          "kaupan tilaukset",
+          "polttoaineenn tilaukset"
         ]
       }
     ]
