@@ -14,12 +14,20 @@ class LanguageView extends BaseView {
   }
 
   _createBlockMarkup() {
-    return this._data.items.map((item) => this._generateItems(item)).join("");
+    console.log(typeof this._data.items);
+
+    let lang_stings = [];
+    for (const [key, value] of Object.entries(this._data.items)) {
+      lang_stings.push(this._generateItems(value, key));
+    }
+
+    return lang_stings.join("");
   }
 
-  _generateItems(itemData) {
+  _generateItems(key, value) {
     return `
-          <p class="languages-item">${itemData}</p>  
+          <p class="languages-item">${value}</p> 
+          <progress value='${key}' max='1'></progress> 
         `;
   }
 }

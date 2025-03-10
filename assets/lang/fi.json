@@ -39,7 +39,7 @@
       "tuonti",
       "passitus",
       "varastotoimet",
-      "toimisto-ojelmistojen käyttö",
+      "toimisto-ohjelmistojen käyttö",
       "käyttöjärjestelmien ylläpito",
       "käyttöjärjestelmien käyttö",
       "tietoliikenneverkko",
@@ -48,7 +48,7 @@
   },
   "languages": {
     "name": "Kielet",
-    "items": ["Venäjä (äidinkieli)", "Suomi (taso 4)", "English (unclassified)"]
+    "items": { "Suomi": 0.8, "Venäjä": 1, "English": 0.5 }
   },
   "profile": {
     "name": "Profiili",

@@ -270,3 +270,12 @@ ul {
 .footer {
   text-align: right;
 }
+
+.footer a {
+  text-decoration: none;
+}
+
+/* OTHERS */
+progress {
+  width: 100%;
+}
