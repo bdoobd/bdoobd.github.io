@@ -48,7 +48,7 @@
   },
   "languages": {
     "name": "Languages",
-    "items": ["Russian (native)", "Finnish (level 4)", "English (unclassified)"]
+    "items": { "Finnish": 0.8, "Russian": 1, "English": 0.5 }
   },
   "profile": {
     "name": "Profile",
