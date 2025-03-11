@@ -14,8 +14,6 @@ class LanguageView extends BaseView {
   }
 
   _createBlockMarkup() {
-    console.log(typeof this._data.items);
-
     let lang_stings = [];
     for (const [key, value] of Object.entries(this._data.items)) {
       lang_stings.push(this._generateItems(value, key));

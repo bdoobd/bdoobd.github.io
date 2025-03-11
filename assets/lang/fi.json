@@ -34,17 +34,15 @@
   },
   "skills": {
     "name": "Osaamisalueet",
-    "items": [
-      "vienti",
-      "tuonti",
-      "passitus",
-      "varastotoimet",
-      "toimisto-ohjelmistojen käyttö",
-      "käyttöjärjestelmien ylläpito",
-      "käyttöjärjestelmien käyttö",
-      "tietoliikenneverkko",
-      "BC ajokortti"
-    ]
+    "items": {
+      "tullimenettelyt": 0.8,
+      "varastotoimet": 0.9,
+      "toimisto-ohjelmistot": 0.8,
+      "käyttöjärjestelmien ylläpito": 0.7,
+      "käyttöjärjestelmien käyttö": 0.9,
+      "tietoliikenneverkko": 0.7,
+      "BC ajokortti": 0
+    }
   },
   "languages": {
     "name": "Kielet",

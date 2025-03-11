@@ -14,12 +14,18 @@ class SkillsView extends BaseView {
   }
 
   _createBlockMarkup() {
-    return this._data.items.map((item) => this._generateItems(item)).join("");
+    let skills_string = [];
+    for (const [key, value] of Object.entries(this._data.items)) {
+      skills_string.push(this._generateItems(key, value));
+    }
+
+    return skills_string.join("");
   }
 
-  _generateItems(itemData) {
+  _generateItems(key, value) {
     return `
-      <p class="skills-item">${itemData}</p>`;
+      <p class="skills-item">${key}</p>
+      ${value != 0 ? `<progress value="${value}" max="1"></progress>` : ""}`;
   }
 }
 

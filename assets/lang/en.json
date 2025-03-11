@@ -34,17 +34,15 @@
   },
   "skills": {
     "name": "Skills",
-    "items": [
-      "export",
-      "import",
-      "transit",
-      "warehouse operations",
-      "use of office software",
-      "operating system maintenance",
-      "operating system usage",
-      "telecommunication networks",
-      "BC driver's license"
-    ]
+    "items": {
+      "customs procedures": 0.8,
+      "warehouse operations": 0.9,
+      "use of office software": 0.8,
+      "operating system maintenance": 0.7,
+      "operating system usage": 0.9,
+      "telecommunication networks": 0.7,
+      "BC driver's license": 0
+    }
   },
   "languages": {
     "name": "Languages",
