@@ -60,12 +60,14 @@
         "workingYears": "2005 - 04.2025",
         "position": "huolitsija, varastomies, tukihenkilö",
         "specs": [
-          "vienti-ilmoitukset UTU",
-          "tuonti-ilmoitukset UTU",
+          "vientiselvitykset UTU",
+          "tuontiselvitykset UTU",
+          "lentorahti",
+          "merituonti, -vienti",
           "passitus UTU / sanomailmoittaminen",
           "rahtiliikenteen saateasiakirjat",
-          "varaston hoito, noudot, lähetykset ja käsittely",
-          "laitteiston ja ohjelmiston tukitehtävät"
+          "varastotehtävät ja varaston kirjanpito",
+          "laitteistojen ja ohjelmistjen tukitehtävät"
         ]
       },
       {
