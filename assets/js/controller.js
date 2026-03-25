@@ -6,6 +6,7 @@ import EducationView from "./views/educationView.js";
 import SkillsView from "./views/skillsView.js";
 import LanguageView from "./views/languageView.js";
 import WorkView from "./views/workView.js";
+import CertificateView from "./views/CertificateView.js";
 
 const getLanguagePreferences = () => localStorage.getItem("language") || "fi";
 
@@ -28,6 +29,7 @@ const run = function (data) {
   SkillsView.render(data.skills);
   LanguageView.render(data.languages);
   WorkView.render(data.work);
+  CertificateView.render(data.certificate);
 };
 
 const init = async function () {

@@ -43,6 +43,10 @@ body {
   font-weight: bolder;
 }
 
+.text-normal {
+  font-size: 1.4rem;
+}
+
 p,
 li {
   font-size: 1.4rem;
@@ -95,7 +99,8 @@ em {
 
 #main-container {
   display: grid;
-  grid-template-rows: minmax(25vh, min-content) repeat(
+  margin-block-start: 2rem;
+  grid-template-rows: minmax(17vh, min-content) repeat(
       3,
       minmax(min-content, max-content)
     );
@@ -112,9 +117,9 @@ em {
         minmax(min-content, max-content)
       )
       [content-end] minmax(0.25rem, 1fr) [full-end];
-  }
 
-  margin-block-start: 2rem;
+    margin-block-start: 0;
+  }
 
   .header {
     grid-column: content-start / content-end;
@@ -152,6 +157,7 @@ em {
   .header,
   .profile,
   .work,
+  .certificate,
   .references,
   .footer {
     background-color: var(--secondary-color);
@@ -167,28 +173,23 @@ em {
     }
   }
 
-  .education {
-    grid-column: content-start / content-end;
-  }
-
-  .work {
-    grid-column: content-start / content-end;
-  }
-
-  .references {
+  .education,
+  .work,
+  .certificate,
+  .references,
+  .footer {
     grid-column: content-start / content-end;
   }
 
   .footer {
-    grid-column: content-start / content-end;
-    grid-row: 4 / span 1;
+    grid-row: 5 / span 1;
     display: flex;
     align-items: flex-end;
     justify-content: end;
 
     @media only screen and (max-width: 40em) {
       grid-column: content-start / content-end;
-      grid-row: 6 / span 1;
+      grid-row: 7 / span 1;
     }
   }
 }
@@ -240,16 +241,7 @@ ul {
 @media only screen and (max-width: 40em) {
   .education-item {
     display: flex;
-    flex-wrap: wrap;
-
-    p {
-      flex-basis: 30%;
-    }
-
-    h5 {
-      flex-basis: 70%;
-      text-align: right;
-    }
+    flex-direction: column;
   }
 }
 
@@ -264,6 +256,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 40rem) {
+  .work-card-header {
+    display: block;
+  }
 }
 
 /* FOOTER */

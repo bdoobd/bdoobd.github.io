@@ -1,6 +1,6 @@
 {
   "header": {
-    "objective": "Freight Forwarder / Warehouse Worker / Support Specialist"
+    "objective": "Logistics and freight forwarding professional with IT skills"
   },
   "contact": {
     "name": "Contact Information",
@@ -13,13 +13,19 @@
     "name": "Education",
     "items": [
       {
-        "nameOfCourse": "Basic Degree in Information Processing, Datanomist",
-        "years": "2004 - 2008",
-        "specs": "User Support Line",
-        "nameOfSchool": "Finnish Business School - IT Institute"
+        "nameOfCourse": "Part of the Vocational Qualification in Transport Services",
+        "years": "09.2025 - 02.2026",
+        "specs": "Working as a driver, initial professional competence in transport",
+        "nameOfSchool": "Varia"
       },
       {
-        "nameOfCourse": "Professional Qualification in Computer Installation",
+        "nameOfCourse": "Vocational Qualification in Business Information Technology (Datanomi)",
+        "years": "2004 - 2008",
+        "specs": "IT support specialization",
+        "nameOfSchool": "Suomen Liikemiesten Kauppaopisto - ATK-Instituutti"
+      },
+      {
+        "nameOfCourse": "Further Vocational Qualification for Computer Assembler",
         "years": "2002 - 2003",
         "specs": "",
         "nameOfSchool": "Amiedu"
@@ -28,20 +34,20 @@
         "nameOfCourse": "Salesperson Training",
         "years": "1998 - 1998",
         "specs": "",
-        "nameOfSchool": "Uusimaa Educational Office"
+        "nameOfSchool": "Uusimaa Study Office"
       }
     ]
   },
   "skills": {
     "name": "Skills",
     "items": {
-      "customs procedures": 0.8,
-      "warehouse operations": 0.9,
-      "use of office software": 0.8,
-      "operating system maintenance": 0.7,
-      "operating system usage": 0.9,
-      "telecommunication networks": 0.7,
-      "BC driver's license": 0
+      "customs_procedures": 0.8,
+      "warehouse_operations": 0.9,
+      "office_software": 0.8,
+      "operating_system_maintenance": 0.7,
+      "operating_system_usage": 0.9,
+      "telecommunications_networks": 0.7,
+      "food_distribution": 0.8
     }
   },
   "languages": {
@@ -50,45 +56,99 @@
   },
   "profile": {
     "name": "Profile",
-    "text": "I am a versatile and diligent worker with experience in office work, freight forwarding, and warehouse operations. I am proficient in the use of computer software and familiar with customs clearance processes. I am quick to learn new skills and adapt easily to changing work situations. I can work efficiently as part of a team or independently. I am seeking an opportunity to leverage my skills in an efficient and customer-oriented environment."
+    "text": "I am an experienced professional in logistics and freight forwarding with a strong background in warehouse operations, customs clearance, and office work. I also hold an initial professional qualification as a truck driver. I work efficiently with various IT systems and quickly adapt to new processes. I am a reliable and flexible team player who can also work independently. I am looking for an opportunity to apply my skills in logistics and transport."
   },
   "work": {
     "name": "Work Experience",
     "items": [
       {
+        "companyName": "Kesko Food Distribution",
+        "workingYears": "01.2026 - 02.2026",
+        "position": "Internship",
+        "specs": [
+          "Distribution of food products to K Group stores and B2B customers",
+          "Loading and unloading of delivery vehicles",
+          "Adhering to schedules and route planning",
+          "Customer service during deliveries",
+          "Handling transport documents",
+          "Temperature-controlled transport",
+          "Forklift operation",
+          "Distribution in the Helsinki metropolitan area"
+        ]
+      },
+      {
         "companyName": "Finnelit Oy",
         "workingYears": "2005 - 04.2025",
-        "position": "Freight Forwarder, Warehouse Worker, Support Specialist",
+        "position": "Freight forwarder, warehouse worker, IT support",
         "specs": [
-          "export declarations UTU",
-          "import declarations UTU",
-          "transit UTU / electronic declarations",
-          "freight traffic waybills",
-          "warehouse management, pickups, shipments, and handling",
-          "hardware and software support tasks"
+          "Export declarations (UTU)",
+          "Import declarations (UTU)",
+          "Air freight",
+          "Sea import and export",
+          "Transit procedures (UTU / electronic declarations)",
+          "Freight documentation",
+          "Warehouse operations and inventory management",
+          "Hardware and software support tasks"
         ]
       },
       {
         "companyName": "Vuosaaren Autokorjaamo",
         "workingYears": "2004 - 2005",
         "position": "Various tasks in workshop and office",
-        "specs": ["invoicing", "ordering spare parts", "installations"]
+        "specs": ["Invoicing", "Ordering spare parts", "Installations"]
       },
       {
         "companyName": "Novo Group Oy",
         "workingYears": "2002 - 2003",
-        "position": "On-Site Support / Internship",
-        "specs": [
-          "OS installations",
-          "standardization",
-          "problem troubleshooting"
-        ]
+        "position": "IT support / internship",
+        "specs": ["OS installations", "Standardization", "Troubleshooting"]
       },
       {
         "companyName": "Kesoil / Neste",
         "workingYears": "1998 - 2000",
-        "position": "Gas Station Salesperson",
-        "specs": ["gas station cashier", "store orders", "fuel orders"]
+        "position": "Service station salesperson",
+        "specs": ["Cash register operations", "Store ordering", "Fuel ordering"]
+      }
+    ]
+  },
+  "certificate": {
+    "name": "Certificates and Licenses",
+    "items": [
+      {
+        "name": "Category B driving license",
+        "valid": "Valid since 03.1995"
+      },
+      {
+        "name": "Category C driving license",
+        "valid": "Valid since 07.2006"
+      },
+      {
+        "name": "Driver Certificate of Professional Competence",
+        "valid": "Valid until 02.2031"
+      },
+      {
+        "name": "Digital Tachograph Card",
+        "valid": "Valid until 11.2030"
+      },
+      {
+        "name": "ADR license (classes 1–9 and tank)",
+        "valid": "Valid until 11.2030"
+      },
+      {
+        "name": "Occupational Safety Card",
+        "valid": "Valid until 10.2030"
+      },
+      {
+        "name": "Road Safety Card 1",
+        "valid": "Valid until 11.2030"
+      },
+      {
+        "name": "First Aid EA1",
+        "valid": "Valid until 11.2028"
+      },
+      {
+        "name": "Forklift license",
+        "valid": "Issued 12.2025"
       }
     ]
   }

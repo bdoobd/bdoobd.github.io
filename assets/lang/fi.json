@@ -1,6 +1,6 @@
 {
   "header": {
-    "objective": "Huolitsija / varastomies / tukihenkilö"
+    "objective": "Logistiikka- ja huolinta-alan ammattilainen IT-osaamisella"
   },
   "contact": {
     "name": "Yhteystiedot",
@@ -12,6 +12,12 @@
   "education": {
     "name": "Koulutus",
     "items": [
+      {
+        "nameOfCourse": "Kuljetusalan ammattitutkinnon osa",
+        "years": "09.2025 - 02.2026",
+        "specs": "Kuljettajana toimiminen, kuljetusalan perustason ammattipätevyys",
+        "nameOfSchool": "Varia"
+      },
       {
         "nameOfCourse": "Tietokäsittelyn perustutkinto, datanomi",
         "years": "2004 - 2008",
@@ -40,21 +46,36 @@
       "toimisto-ohjelmistot": 0.8,
       "käyttöjärjestelmien ylläpito": 0.7,
       "käyttöjärjestelmien käyttö": 0.9,
-      "tietoliikenneverkko": 0.7,
-      "BC ajokortti": 0
+      "tietoliikenneverkot": 0.7,
+      "elintarvikejakelu": 0.8
     }
   },
   "languages": {
     "name": "Kielet",
-    "items": { "Suomi": 0.8, "Venäjä": 1, "English": 0.5 }
+    "items": { "Suomi": 0.8, "Venäjä": 1, "Englanti": 0.5 }
   },
   "profile": {
     "name": "Profiili",
-    "text": "Olen monipuolinen ja ahkera työntekijä, jolla on kokemusta toimistotyöstä, huolinnasta sekä varastotyöskentelystä. Hallitsen hyvin tietokoneohjelmistojen käytön ja tunnen tullausprosessien periaatteet. Olen nopea oppimaan uutta ja sopeudun helposti muuttuviin työtilanteisiin. Voin työskennellä tehokkaasti sekä osana tiimiä että itsenäisesti. Etsin mahdollisuutta hyödyntää taitojani tehokkaassa ja asiakaslähtöisessä ympäristössä."
+    "text": "Olen kokenut logistiikka- ja huolinta-alan työntekijä, jolla on vahva tausta varastotyössä, tullauksessa sekä toimistotehtävissä. Minulla on myös kuorma-autonkuljettajan perustason ammattipätevyys. Työskentelen sujuvasti erilaisten tietojärjestelmien kanssa ja omaksun nopeasti uusia toimintatapoja. Olen luotettava ja joustava tiimipelaaja, joka pystyy työskentelemään tehokkaasti myös itsenäisesti. Etsin mahdollisuutta hyödyntää osaamistani logistiikan ja kuljetusalan tehtävissä."
   },
   "work": {
     "name": "Työkokemus",
     "items": [
+      {
+        "companyName": "Kesko Elintarvikejakelu",
+        "workingYears": "01.2026 - 02.2026",
+        "position": "työharjoittelu",
+        "specs": [
+          "elintarvikkeiden jakelu K-ryhmän myymälöihin ja B2B-asiakkaille",
+          "jakeluauton lastaus ja purku",
+          "aikataulujen noudattaminen ja reittien suunnittelu",
+          "asiakaspalvelu toimitusten yhteydessä",
+          "kuljetusasiakirjojen käsittely",
+          "kylmäkuljetus",
+          "trukin käyttö",
+          "jakelu pääkaupunkiseudulla"
+        ]
+      },
       {
         "companyName": "Finnelit Oy",
         "workingYears": "2005 - 04.2025",
@@ -67,7 +88,7 @@
           "passitus UTU / sanomailmoittaminen",
           "rahtiliikenteen saateasiakirjat",
           "varastotehtävät ja varaston kirjanpito",
-          "laitteistojen ja ohjelmistjen tukitehtävät"
+          "laitteistojen ja ohjelmistojen tukitehtävät"
         ]
       },
       {
@@ -89,8 +110,49 @@
         "specs": [
           "huoltamon kassa",
           "kaupan tilaukset",
-          "polttoaineenn tilaukset"
+          "polttoaineen tilaukset"
         ]
+      }
+    ]
+  },
+  "certificate": {
+    "name": "Kortit ja pätevyydet",
+    "items": [
+      {
+        "name": "B ajokortti",
+        "valid": "03.1995 lähtien"
+      },
+      {
+        "name": "C ajokortti",
+        "valid": "07.2006 lähtien"
+      },
+      {
+        "name": "Kuljettajan ammattipätevyyskortti",
+        "valid": "voimassa 02.2031 asti"
+      },
+      {
+        "name": "Digipiirturikortti",
+        "valid": "voimassa 11.2030 asti"
+      },
+      {
+        "name": "ADR-ajolupa (luokat 1–9 sekä säiliö)",
+        "valid": "voimassa 11.2030 asti"
+      },
+      {
+        "name": "Työturvallisuuskortti",
+        "valid": "voimassa 10.2030 asti"
+      },
+      {
+        "name": "Tieturvakortti 1",
+        "valid": "voimassa 11.2030 asti"
+      },
+      {
+        "name": "Ensiapu EA1",
+        "valid": "voimassa 11.2028 asti"
+      },
+      {
+        "name": "Trukkikortti",
+        "valid": "myönnetty 12.2025"
       }
     ]
   }
