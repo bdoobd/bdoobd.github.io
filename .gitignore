@@ -3,3 +3,4 @@ ztmp/*
 src/
 
 *backup*
+.DS_Store

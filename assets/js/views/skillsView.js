@@ -9,7 +9,7 @@ class SkillsView extends BaseView {
 
   _generateName() {
     return `
-      <h3 class="heading-3 py-2" data-1ng="skills">${this._data.name}</h3>
+      <h3 class="skills__title" data-1ng="skills">${this._data.name}</h3>
     `;
   }
 
@@ -24,8 +24,8 @@ class SkillsView extends BaseView {
 
   _generateItems(key, value) {
     return `
-      <p class="skills-item">${key}</p>
-      ${value != 0 ? `<progress value="${value}" max="1"></progress>` : ""}`;
+      <p class="skills__item tab-right-1">${key}</p>
+      ${value != 0 ? `<progress class="tab-right-1" value="${value}" max="1"></progress>` : ""}`;
   }
 }
 

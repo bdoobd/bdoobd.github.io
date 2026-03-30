@@ -5,8 +5,8 @@ class ProfileView extends BaseView {
 
   _generateMarkup() {
     return `
-    <h3 class="heading-3 py-2"">${this._data.name}</h3>
-        <p>
+    <h3 class="profile__title">${this._data.name}</h3>
+        <p class="tab-right-1">
           ${this._data.text}
         </p>`;
   }

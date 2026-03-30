@@ -12,7 +12,6 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 1.6;
 }
 
 img {
@@ -20,33 +19,15 @@ img {
   height: auto;
 }
 
-.tab-right-1 {
-  margin-inline-start: 1rem;
-}
-
 #main-container {
   display: grid;
   background-color: var(--primary-color);
-  max-width: 70rem;
-  margin: 0 auto;
 }
 
 .aside,
 .main,
 .footer {
   padding-inline: 0.5rem;
-}
-
-.contact__title,
-.education__title,
-.skills__title,
-.languages__title,
-.profile__title,
-.work__title,
-.certificate__title {
-  font-size: 1.5rem;
-  color: var(--dark-khaki);
-  margin: 0.25rem 0 0.5rem 0;
 }
 
 .header {
@@ -57,8 +38,6 @@ img {
 
 .header__logo {
   margin-inline-end: 1rem;
-  display: flex;
-  align-items: center;
 }
 
 .header__logo img {
@@ -84,73 +63,20 @@ img {
   color: var(--vintage-grape);
 }
 
-.contact p {
-  display: flex;
-  align-items: center;
+.contact--title,
+.education--title,
+.skills--title,
+.language--title,
+.profile--title,
+.work--title,
+.certificate--title {
+  font-size: 1.5rem;
+  color: var(--dark-khaki);
+  margin: 0.25rem 0 0.5rem 0;
 }
 
 .contact img {
   max-width: 1.5rem;
-  display: inline-block;
-  margin-inline-end: 0.5rem;
-}
-
-.education__item {
-  margin-block-end: 1rem;
-}
-
-.education__year {
-  text-align: right;
-  margin-inline-end: 0.5rem;
-}
-
-.education__course {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.education__school {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.work__card {
-  margin-block-end: 1rem;
-}
-
-.work__card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.work__card__company {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.work__card__position {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.work__card__item::before {
-  content: "\2611";
-  color: green;
-  margin-inline-end: 0.5rem;
-}
-
-.certificate__card__item {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-}
-.certificate__card__name {
-  font-weight: 500;
-}
-
-.certificate__card__valid {
-  margin-inline-start: 2rem;
 }
 
 .footer {

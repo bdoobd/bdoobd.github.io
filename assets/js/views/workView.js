@@ -9,7 +9,7 @@ class WorkView extends BaseView {
 
   _generateName() {
     return `
-        <h3 class="heading-3 pe-2">${this._data.name}</h3>
+        <h3 class="work__title">${this._data.name}</h3>
       `;
   }
 
@@ -19,13 +19,13 @@ class WorkView extends BaseView {
 
   _generateItems(itemData) {
     return `
-        <div class="work-card">
-          <div class="work-card-header">
-            <h4 class="heading-4">${itemData.companyName}</h4>
-            <h5 class="heading-5">${itemData.workingYears}</h5>
+        <div class="work__card tab-right-1">
+          <div class="work__card__header">
+            <h4 class="work__card__company">${itemData.companyName}</h4>
+            <h5 class="work__card__date">${itemData.workingYears}</h5>
           </div>
-          <h5 class="heading-5">${itemData.position}</h5>
-          <ul>
+          <h5 class="work__card__position">${itemData.position}</h5>
+          <ul class="work__card__list">
             ${this._generateList(itemData.specs)}
           </ul>
         </div>
@@ -33,7 +33,9 @@ class WorkView extends BaseView {
   }
 
   _generateList(listData) {
-    return listData.map((item) => `<li>${item}</li>`).join("");
+    return listData
+      .map((item) => `<li class="work__card__item">${item}</li>`)
+      .join("");
   }
 }
 

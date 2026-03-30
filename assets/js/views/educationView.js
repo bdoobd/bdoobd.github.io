@@ -13,18 +13,18 @@ class EducationView extends BaseView {
 
   _generateItems(itemData) {
     return `
-      <div class="education-item">
-        <p class="print-bold">${itemData.years}</p>
-        <h5 class="heading-5">${itemData.nameOfCourse}</h5>
-        <p class="heading-6">${itemData.specs}</p>
-        <p>${itemData.nameOfSchool}</p>
+      <div class="education__item tab-right-1">
+        <p class="education__year">${itemData.years}</p>
+        <h5 class="education__course">${itemData.nameOfCourse}</h5>
+        <p class="education__specs">${itemData.specs}</p>
+        <p class="education__school">${itemData.nameOfSchool}</p>
       </div>
     `;
   }
 
   _generateName() {
     return `
-    <h3 class="heading-3 py-2">${this._data.name}</h3>
+    <h3 class="education__title">${this._data.name}</h3>
     `;
   }
 }

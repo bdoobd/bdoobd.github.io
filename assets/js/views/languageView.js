@@ -9,7 +9,7 @@ class LanguageView extends BaseView {
 
   _generateName() {
     return `
-            <h3 class="heading-3 py-2" data-1ng="languages">${this._data.name}</h3>
+            <h3 class="languages__title" data-1ng="languages">${this._data.name}</h3>
         `;
   }
 
@@ -24,8 +24,8 @@ class LanguageView extends BaseView {
 
   _generateItems(key, value) {
     return `
-          <p class="languages-item">${value}</p> 
-          <progress value='${key}' max='1'></progress> 
+          <p class="languages__item tab-right-1">${value}</p> 
+          <progress class="tab-right-1" value='${key}' max='1'></progress> 
         `;
   }
 }

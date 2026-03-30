@@ -9,7 +9,7 @@ class CertificateView extends BaseView {
 
   _generateName() {
     return `
-        <h3 class="heading-3 pe-2">${this._data.name}</h3>
+        <h3 class="certificate__title">${this._data.name}</h3>
       `;
   }
 
@@ -19,11 +19,11 @@ class CertificateView extends BaseView {
 
   _generateItems(itemData) {
     return `
-        <div class="work-card">
-          <div class="work-card-header">
-            <h4 class="text-normal">${itemData.name}</h4>
-            <h4 class="text-normal">${itemData.valid}</h4>
-          </div>
+        <div class="certificate__card tab-right-1">
+          <dl class="certificate__card__item">
+            <dt class="certificate__card__name">${itemData.name}</dt>
+            <dd class="certificate__card__valid">${itemData.valid}</dd>
+          </dl>
         </div>
       `;
   }
